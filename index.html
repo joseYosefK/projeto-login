@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/querys.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Login</title>
@@ -13,35 +14,43 @@
         <!--a imagem fica melhor no backgroud-->
         <div id="imagem"></div>
         <!------------------------------------->
-        <h1>Login</h1>
-        <p>Benvindo! Faça login para continuar..</p>
-        <form action="">
-            <div class="entrada">
-                <label for="iuser">
-                    <span class="material-symbols-outlined">person</span>
-                </label>
-                <input 
-                type="text" 
-                name="person" 
-                id="iuser" 
-                class="input" >
-            </div>
-            <div class="entrada">
-                <label for="ipassword">
-                    <span class="material-symbols-outlined">key</span>
-                </label>
-                <input 
-                type="password" 
-                name="password" 
-                id="ipassword"
-                class="input">
-            </div>
-            <button type="submit">entrar</button>
-            <div class="bntdiv">
-                <a href="#">esqueci minha senha</a>
-                <span class="material-symbols-outlined">mail</span>
-            </div>
-        </form>
+
+        <div id="login">
+            <h1>Login</h1>
+            <p>Benvindo! Faça login para continuar..</p>
+            <form action="" autocomplete="on" method="post">
+                <div class="entrada">
+                    <label for="iuser">
+                        <span class="material-symbols-outlined">person</span>
+                    </label>
+                    <input
+                    type="email"
+                    name="person"
+                    id="iuser"
+                    class="input"
+                    required
+                    autocomplete="email"
+                    >
+                </div>
+                <div class="entrada">
+                    <label for="ipassword">
+                        <span class="material-symbols-outlined">key</span>
+                    </label>
+                    <input
+                    type="password"
+                    name="password"
+                    id="ipassword"
+                    class="input"
+                    required
+                    autocomplete="current-password">
+                </div>
+                <button type="submit">entrar</button>
+                <div class="bntdiv">
+                    <a href="#">esqueci minha senha</a>
+                    <span class="material-symbols-outlined">mail</span>
+                </div>
+            </form>
+        </div>
     </main>
 </body>
 </html>

@@ -28,11 +28,15 @@ main{
     overflow: hidden;
 }
 #imagem{
+    display: block;
     height: 200px;
     width: 250px;
     background-image:url('../imagens/login.jpg');
     background-size: cover;
     background-position: center center;
+}
+#login{
+    display: block;
 }
 main h1{
     font-size: 1.3;
